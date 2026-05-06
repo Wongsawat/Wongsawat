@@ -10,7 +10,7 @@
 |------|-------------|
 | **Languages** | Java 17/21, Python |
 | **Frameworks** | Spring Boot, Spring Cloud, Apache Camel |
-| **Messaging** | Apache Kafka, Apache ActiveMQ |
+| **Messaging** | Apache Kafka |
 | **Databases** | PostgreSQL, MongoDB |
 | **Integration** | ebXML/ebMS 2.0, REST APIs |
 | **Digital Signatures** | XAdES, PAdES, CSC API v2.0 |
