@@ -42,7 +42,7 @@ A production-grade microservices platform for processing, digitally signing, and
 |-----------|-------------|
 | [document-intake-service](https://github.com/Thailand-eTax-Project/document-intake-service) | Document intake & validation |
 
-**Processing Services (7)**
+**Processing Services (6)**
 | Repository | Description |
 |-----------|-------------|
 | [invoice-processing-service](https://github.com/Thailand-eTax-Project/invoice-processing-service) | Invoice processing |
@@ -51,9 +51,14 @@ A production-grade microservices platform for processing, digitally signing, and
 | [cancellationnote-processing-service](https://github.com/Thailand-eTax-Project/cancellationnote-processing-service) | Cancellation Note processing |
 | [debitcreditnote-processing-service](https://github.com/Thailand-eTax-Project/debitcreditnote-processing-service) | Debit/Credit Note processing |
 | [abbreviatedtaxinvoice-processing-service](https://github.com/Thailand-eTax-Project/abbreviatedtaxinvoice-processing-service) | Abbreviated Tax Invoice processing |
-| [xml-signing-service](https://github.com/Thailand-eTax-Project/xml-signing-service) | XML digital signatures (XAdES) |
 
-**PDF Services (7)**
+**Signing Services**
+| Repository | Description |
+|-----------|-------------|
+| [xml-signing-service](https://github.com/Thailand-eTax-Project/xml-signing-service) | XML digital signatures (XAdES) |
+| [pdf-signing-service](https://github.com/Thailand-eTax-Project/pdf-signing-service) | PDF digital signatures (PAdES) |
+
+**PDF Services (6)**
 | Repository | Description |
 |-----------|-------------|
 | [invoice-pdf-generation-service](https://github.com/Thailand-eTax-Project/invoice-pdf-generation-service) | Invoice PDF/A-3 generation |
@@ -62,7 +67,6 @@ A production-grade microservices platform for processing, digitally signing, and
 | [cancellationnote-pdf-generation-service](https://github.com/Thailand-eTax-Project/cancellationnote-pdf-generation-service) | Cancellation Note PDF/A-3 generation |
 | [debitcreditnote-pdf-generation-service](https://github.com/Thailand-eTax-Project/debitcreditnote-pdf-generation-service) | Debit/Credit Note PDF/A-3 generation |
 | [abbreviatedtaxinvoice-pdf-generation-service](https://github.com/Thailand-eTax-Project/abbreviatedtaxinvoice-pdf-generation-service) | Abbreviated Tax Invoice PDF/A-3 |
-| [pdf-signing-service](https://github.com/Thailand-eTax-Project/pdf-signing-service) | PDF digital signatures (PAdES) |
 
 **Storage & Downstream**
 | Repository | Description |
@@ -71,12 +75,6 @@ A production-grade microservices platform for processing, digitally signing, and
 | [notification-service](https://github.com/Thailand-eTax-Project/notification-service) | Email/webhook notifications |
 | [ebms-sending-service](https://github.com/Thailand-eTax-Project/ebms-sending-service) | ebXML submission to Revenue Dept |
 | [orchestrator-service](https://github.com/Thailand-eTax-Project/orchestrator-service) | Saga orchestration coordinator |
-
-## GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Wongsawat&theme=default&show_border=true)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Wongsawat&layout=compact)
 
 ---
 
