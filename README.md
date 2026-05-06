@@ -2,7 +2,7 @@
 
 ## About Me
 
-Senior Software Engineer based in Bangkok, Thailand, specializing in enterprise integration and government-compliant document processing systems. I build high-reliability microservices platforms for Thailand's electronic tax invoice ecosystem.
+**Solution Architect & Senior Software Engineer** based in Bangkok, Thailand, specializing in enterprise integration and government-compliant document processing systems. I design and build high-reliability microservices platforms for Thailand's electronic tax invoice ecosystem.
 
 ## Tech Stack
 
@@ -22,19 +22,19 @@ Senior Software Engineer based in Bangkok, Thailand, specializing in enterprise 
 
 A production-grade microservices platform for processing, digitally signing, and submitting Thai e-Tax documents (Tax Invoice, Invoice, Receipt, Debit/Credit Notes, Cancellation Notes) to Thailand's Revenue Department via ebXML.
 
-- **19 Spring Boot microservices** orchestrated via saga pattern
+- **Saga orchestrator** coordinating distributed transactions across 19 microservices
 - **Transactional outbox** with Debezium CDC for reliable event delivery
 - **XAdES/PAdES digital signatures** via CSC API v2.0
 - **PDF/A-3 generation** with embedded XML for archival compliance
 - Supports 7 Thai e-Tax document types
 
-#### Components
+#### Repositories
 
-| Component | Description |
-|-----------|-------------|
+| Repository | Description |
+|------------|-------------|
 | [teda](https://github.com/Thailand-eTax-Project/teda) | Thai e-Tax Invoice JAXB library with database-backed code lists |
 | [eidasremotesigning](https://github.com/Thailand-eTax-Project/eidasremotesigning) | Remote Signing Service via CSC API v2.0 |
-| [invoice-microservices](https://github.com/Thailand-eTax-Project/invoice-microservices) | 16 Spring Boot services for document processing pipeline |
+| [invoice-microservices](https://github.com/Thailand-eTax-Project/invoice-microservices) | Orchestrator and processing services (16 microservices) |
 
 ## GitHub Stats
 
