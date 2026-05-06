@@ -1,8 +1,8 @@
-# Hi there, I'm Weerachat Wongsawat 👋
+# Hi there, I'm Weerachat Wongsawat
 
 ## About Me
 
-**Solution Architect & Senior Software Engineer** based in Bangkok, Thailand, specializing in enterprise integration and government-compliant document processing systems. I design and build high-reliability microservices platforms for Thailand's electronic tax invoice ecosystem.
+**Solution Architect & Senior Software Engineer** based in Bangkok, Thailand, specializing in enterprise integration. I design and build enterprise integration platforms for Telecom, Banking and Government sectors — microservices, digital signatures, and regulatory document processing.
 
 ## Tech Stack
 
