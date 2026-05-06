@@ -78,4 +78,4 @@ A production-grade microservices platform for processing, digitally signing, and
 
 ---
 
-Feel free to reach out if you're working on e-government integration, digital signature implementations, or enterprise document processing systems.
+Connect with me on [LinkedIn](https://www.linkedin.com/in/weerachat-wongsawat/) if you're working on e-government integration, digital signature implementations, telecom service delivery platforms, or ISO 20022 payment systems.
