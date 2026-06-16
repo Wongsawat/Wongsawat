@@ -2,7 +2,7 @@
 
 ## About Me
 
-**Solution Architect & Senior Software Engineer** based in Bangkok, Thailand, specializing in enterprise integration. I design and build enterprise integration platforms for Telecom, Banking and Government sectors — microservices, digital signatures, and regulatory document processing.
+**Solution Architect & Senior Software Engineer** based in Bangkok, Thailand, specializing in enterprise integration. I design and build enterprise integration platforms for Telecom, Banking and Government sectors — microservices, digital signatures, Open Banking payment initiation, and regulatory document processing.
 
 ## Tech Stack
 
@@ -12,8 +12,9 @@
 | **Frameworks** | Spring Boot, Spring Cloud, Apache Camel |
 | **Messaging** | Apache Kafka |
 | **Databases** | PostgreSQL, MongoDB |
-| **Integration** | ebXML/ebMS 2.0, REST APIs |
+| **Integration** | ebXML/ebMS 2.0, REST APIs, Open Banking RW API v4.0.1 |
 | **Digital Signatures** | XAdES, PAdES, CSC API v2.0 |
+| **Payment Standards** | ISO 20022, FPS (pacs.008/pacs.002), BC-FIPS |
 | **DevOps** | Docker, Kubernetes |
 
 ## Featured Projects
@@ -78,4 +79,59 @@ A production-grade microservices platform for processing, digitally signing, and
 
 ---
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/weerachat-wongsawat/) if you're working on e-government integration, digital signature implementations, telecom service delivery platforms, or ISO 20022 payment systems.
+### [PISP Open Banking Platform](https://github.com/wongsawat-pisp-openbanking)
+
+A production-grade microservices platform implementing the UK Open Banking Read/Write API v4.0.1 specification for Payment Initiation Service Provider (PISP) flows. 18 microservices in a flat multi-module Maven monorepo covering domestic, international, scheduled, and standing-order payment workflows with full consent management.
+
+- **Hexagonal architecture** (ports + adapters) across all services with domain/application/adapter/infrastructure layers
+- **ISO 20022 payment rails** via Prowide-based FPS adapter (pacs.008 outbound, pacs.002 inbound) with end-to-end instruction traceability
+- **Saga orchestration** with Kafka outbox pattern for reliable domain-event delivery (`pisp.domain-events`, `pisp.saga-commands`)
+- **Security filter chain:** RawBodyCaching, BearerToken, MutualTLS, Idempotency, JWS verification, GrantType enforcement, ResponseSigning
+- **BC-FIPS ready:** Optional `bcfips-integration` Maven profile activates Bouncy Castle FIPS PS256 signing
+- **Comprehensive test strategy:** Domain unit tests, application slice tests, `@DataJpaTest` persistence, `@SpringBootTest` REST, and RestAssured + Testcontainers E2E
+
+#### Service Groups (18 services)
+
+**Payment Initiation**
+| Service | Description |
+|---------|-------------|
+| domestic-payments | Domestic payment initiation with FPS rail adapter |
+| international-payments | International payment initiation |
+| file-payments | File-based bulk payment initiation |
+
+**Scheduled Payments**
+| Service | Description |
+|---------|-------------|
+| domestic-scheduled-payments | Future-dated domestic payments |
+| international-scheduled-payments | Future-dated international payments |
+
+**Standing Orders**
+| Service | Description |
+|---------|-------------|
+| domestic-standing-orders | Recurring domestic payments |
+| international-standing-orders | Recurring international payments |
+
+**Consent Management**
+| Service | Description |
+|---------|-------------|
+| domestic-payment-consents | Domestic payment consent authorisation |
+| international-payment-consents | International payment consent authorisation |
+| file-payment-consents | File payment consent authorisation |
+| domestic-scheduled-payment-consents | Domestic scheduled payment consent authorisation |
+| international-scheduled-payment-consents | International scheduled payment consent authorisation |
+| domestic-standing-order-consents | Domestic standing order consent authorisation |
+| international-standing-order-consents | International standing order consent authorisation |
+
+**Infrastructure & Fee Engine**
+| Service | Description |
+|---------|-------------|
+| saga-orchestrator | Distributed saga coordination |
+| event-notification | Cross-cutting event notification |
+| fee-engine | Fee calculation engine |
+| fee-engine-demo | Fee engine demo frontend |
+| fee-engine-admin-ui | Fee engine admin UI |
+| fee-engine-ai-assistant | AI-powered fee engine assistant |
+
+---
+
+Connect with me on [LinkedIn](https://www.linkedin.com/in/weerachat-wongsawat/) if you're working on e-government integration, digital signature implementations, telecom service delivery platforms, Open Banking payment initiation, or ISO 20022 payment systems.
