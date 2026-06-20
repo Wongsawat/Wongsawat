@@ -144,7 +144,7 @@ A microservices platform implementing the ETDA (Thailand) Digital Academic Trans
 - **Hexagonal architecture** across all services (Java 17/21, Spring Boot)
 - **Crash-safe signing** with explicit transaction boundaries (TX1 / TX1.5 / TX2) and idempotent replay
 
-#### Repositories (7 repos)
+#### Repositories (8 repos)
 
 | Repository | Description |
 |-----------|-------------|
@@ -154,6 +154,7 @@ A microservices platform implementing the ETDA (Thailand) Digital Academic Trans
 | [transcript-orchestrator](https://github.com/Thailand-digital-transcript/transcript-orchestrator) | Saga orchestrator (batches) |
 | [transcript-signing](https://github.com/Thailand-digital-transcript/transcript-signing) | XAdES (XML) + PAdES (PDF) signing |
 | [transcript-pdf-generation](https://github.com/Thailand-digital-transcript/transcript-pdf-generation) | Sealed XML → PDF/A-3b |
+| [transcript-approval-ui](https://github.com/Thailand-digital-transcript/transcript-approval-ui) | React 19 + Vite SPA — registrar/dean approval UI & monitoring |
 | [e2e-harness](https://github.com/Thailand-digital-transcript/e2e-harness) | Cross-service E2E + compose topology |
 
 ---
