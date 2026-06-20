@@ -95,9 +95,9 @@ A production-grade microservices platform implementing the UK Open Banking Read/
 **Payment Initiation**
 | Service | Description |
 |---------|-------------|
-| domestic-payments | Domestic payment initiation with FPS rail adapter |
+| [domestic-payments](https://github.com/wongsawat-pisp-openbanking/domestic-payments) | Domestic payment initiation with FPS rail adapter |
 | international-payments | International payment initiation |
-| file-payments | File-based bulk payment initiation |
+| [file-payments](https://github.com/wongsawat-pisp-openbanking/file-payments) | File-based bulk payment initiation |
 
 **Scheduled Payments**
 | Service | Description |
@@ -114,9 +114,9 @@ A production-grade microservices platform implementing the UK Open Banking Read/
 **Consent Management**
 | Service | Description |
 |---------|-------------|
-| domestic-payment-consents | Domestic payment consent authorisation |
+| [domestic-payment-consents](https://github.com/wongsawat-pisp-openbanking/domestic-payment-consents) | Domestic payment consent authorisation |
 | international-payment-consents | International payment consent authorisation |
-| file-payment-consents | File payment consent authorisation |
+| [file-payment-consents](https://github.com/wongsawat-pisp-openbanking/file-payment-consents) | File payment consent authorisation |
 | domestic-scheduled-payment-consents | Domestic scheduled payment consent authorisation |
 | international-scheduled-payment-consents | International scheduled payment consent authorisation |
 | domestic-standing-order-consents | Domestic standing order consent authorisation |
@@ -125,12 +125,12 @@ A production-grade microservices platform implementing the UK Open Banking Read/
 **Infrastructure & Fee Engine**
 | Service | Description |
 |---------|-------------|
-| saga-orchestrator | Distributed saga coordination |
-| event-notification | Cross-cutting event notification |
-| fee-engine | Fee calculation engine |
-| fee-engine-demo | Fee engine demo frontend |
-| fee-engine-admin-ui | Fee engine admin UI |
-| fee-engine-ai-assistant | AI-powered fee engine assistant |
+| [saga-orchestrator](https://github.com/wongsawat-pisp-openbanking/saga-orchestrator) | Distributed saga coordination |
+| [event-notification](https://github.com/wongsawat-pisp-openbanking/event-notification) | Cross-cutting event notification |
+| [fee-engine](https://github.com/wongsawat-pisp-openbanking/fee-engine) | Fee calculation engine |
+| [fee-engine-demo](https://github.com/wongsawat-pisp-openbanking/fee-engine-demo) | Fee engine demo frontend |
+| [fee-engine-admin-ui](https://github.com/wongsawat-pisp-openbanking/fee-engine-admin-ui) | Fee engine admin UI |
+| [fee-engine-ai-assistant](https://github.com/wongsawat-pisp-openbanking/fee-engine-ai-assistant) | AI-powered fee engine assistant |
 
 ---
 
