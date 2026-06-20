@@ -134,4 +134,28 @@ A production-grade microservices platform implementing the UK Open Banking Read/
 
 ---
 
+### [Thai Digital Academic Transcript Platform](https://github.com/Thailand-digital-transcript)
+
+A microservices platform implementing the ETDA (Thailand) Digital Academic Transcript standard — ingesting transcript XML, validating against schema + Schematron business rules, driving multi-party approval + signing sagas (registrar → dean → university seal), and rendering PDF/A-3b documents with the sealed XML embedded.
+
+- **Saga orchestration** with a transactional outbox (Camel-relayed `outbox_event` → Kafka)
+- **XAdES/PAdES digital signatures** via CSC API v2.0 (eidasremotesigning)
+- **PDF/A-3b generation** with embedded sealed XML, conformance gated by veraPDF
+- **Hexagonal architecture** across all services (Java 17/21, Spring Boot)
+- **Crash-safe signing** with explicit transaction boundaries (TX1 / TX1.5 / TX2) and idempotent replay
+
+#### Repositories (7 repos)
+
+| Repository | Description |
+|-----------|-------------|
+| [transcript-lib](https://github.com/Thailand-digital-transcript/transcript-lib) | JAXB bindings + Schematron + codelist JPA |
+| [transcript-saga-commons](https://github.com/Thailand-digital-transcript/transcript-saga-commons) | Shared saga + transactional-outbox library |
+| [transcript-processing](https://github.com/Thailand-digital-transcript/transcript-processing) | REST intake & source-XML ingestion |
+| [transcript-orchestrator](https://github.com/Thailand-digital-transcript/transcript-orchestrator) | Saga orchestrator (batches) |
+| [transcript-signing](https://github.com/Thailand-digital-transcript/transcript-signing) | XAdES (XML) + PAdES (PDF) signing |
+| [transcript-pdf-generation](https://github.com/Thailand-digital-transcript/transcript-pdf-generation) | Sealed XML → PDF/A-3b |
+| [e2e-harness](https://github.com/Thailand-digital-transcript/e2e-harness) | Cross-service E2E + compose topology |
+
+---
+
 Connect with me on [LinkedIn](https://www.linkedin.com/in/weerachat-wongsawat/) if you're working on e-government integration, digital signature implementations, telecom service delivery platforms, Open Banking payment initiation, or ISO 20022 payment systems.
