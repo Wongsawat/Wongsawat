@@ -108,7 +108,7 @@ A production-grade microservices platform implementing the UK Open Banking Read/
 **Standing Orders**
 | Service | Description |
 |---------|-------------|
-| domestic-standing-orders | Recurring domestic payments |
+| [domestic-standing-orders](https://github.com/wongsawat-pisp-openbanking/domestic-standing-orders) | Recurring domestic payments |
 | international-standing-orders | Recurring international payments |
 
 **Consent Management**
@@ -119,7 +119,7 @@ A production-grade microservices platform implementing the UK Open Banking Read/
 | [file-payment-consents](https://github.com/wongsawat-pisp-openbanking/file-payment-consents) | File payment consent authorisation |
 | domestic-scheduled-payment-consents | Domestic scheduled payment consent authorisation |
 | international-scheduled-payment-consents | International scheduled payment consent authorisation |
-| domestic-standing-order-consents | Domestic standing order consent authorisation |
+| [domestic-standing-order-consents](https://github.com/wongsawat-pisp-openbanking/domestic-standing-order-consents) | Domestic standing order consent authorisation |
 | international-standing-order-consents | International standing order consent authorisation |
 
 **Infrastructure & Fee Engine**
